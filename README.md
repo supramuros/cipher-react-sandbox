@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NextJS Typescript Boilerplate
 
 Bootstrap a developer-friendly NextJS app configured with:
@@ -46,3 +47,6 @@ yarn dev
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+=======
+# cipher-react-sandbox
+>>>>>>> f22d054980703b0d95ae5eb457a896fd4034b604
