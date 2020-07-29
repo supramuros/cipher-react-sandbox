@@ -62,7 +62,7 @@ export const Index = (): JSX.Element => (
             a {
               width: 33%;
               font-size: 1em;
-              margin: 1.5em;
+              margin: 0.5em;
               text-decoration: none;
               color: white;
             }

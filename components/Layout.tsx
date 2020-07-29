@@ -14,7 +14,7 @@ const headerLinks = [
     {href: "about", name:"About"}
 ];
 const footerLinks = [
-    {href: "/", name:"Home"},
+    {href: "index", name:"Home"},
     {href: "about", name:"About"}
 ];
 
@@ -26,7 +26,7 @@ export const Layout: FunctionComponent<Props> = (props) => {
                 <link rel="icon" href="/eye-off.svg" />
             </Head>
             <header>
-                <Link href="/"><a><h1>Cypher</h1></a></Link>
+                <Link href="index"><a><h1>Cypher</h1></a></Link>
                 <HeaderNav links={headerLinks} />
             </header>
             <main>
