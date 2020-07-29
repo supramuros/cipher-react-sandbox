@@ -1,8 +1,8 @@
 import React from "react";
-import HomophonicSubstitutionCypher from "../../services/HomophonicSubstitutionCypher";
-import {Layout} from "../../components/Layout"
-import {KeyDisplayTable} from "../../components/KeyDisplayTable";
-import SubstitutionContainer from "../../components/SubstitutionContainer";
+import HomophonicSubstitutionCypher from "../services/HomophonicSubstitutionCypher";
+import {Layout} from "../components/Layout"
+import {KeyDisplayTable} from "../components/KeyDisplayTable";
+import SubstitutionContainer from "../components/SubstitutionContainer";
 
 
 export default class Homophonic extends React.Component<{},{key:HomophonicSubstitutionCypher}> {

@@ -1,8 +1,8 @@
 import React from "react";
-import SubstitutionCypher from "../../services/SubstitutionCypher";
-import {Layout} from "../../components/Layout"
-import {KeyDisplayTable} from "../../components/KeyDisplayTable";
-import SubstitutionContainer from "../../components/SubstitutionContainer";
+import SubstitutionCypher from "../services/SubstitutionCypher";
+import {Layout} from "../components/Layout"
+import {KeyDisplayTable} from "../components/KeyDisplayTable";
+import SubstitutionContainer from "../components/SubstitutionContainer";
 
 
 export default class Simple extends React.Component<{},{key:SubstitutionCypher}> {

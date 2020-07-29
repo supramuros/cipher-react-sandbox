@@ -8,14 +8,14 @@ type Props = {
     children?: ReactNode;
 }
 const headerLinks = [
-    {href: "/substitution/simple", name:"Simple Substitution"},
-    {href: "/substitution/homophonic", name:"Homophonic Substitution"},
-    {href: "/vigenere", name:"Vigenère"},
-    {href: "/about", name:"About"}
+    {href: "simple", name:"Simple Substitution"},
+    {href: "homophonic", name:"Homophonic Substitution"},
+    {href: "vigenere", name:"Vigenère"},
+    {href: "about", name:"About"}
 ];
 const footerLinks = [
     {href: "/", name:"Home"},
-    {href: "/about", name:"About"}
+    {href: "about", name:"About"}
 ];
 
 export const Layout: FunctionComponent<Props> = (props) => {

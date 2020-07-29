@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const Index = (): JSX.Element => (
   <Layout title='Cypher'>
     <h1>Welcome to Cypher!</h1>
-      <Link href="/substitution/simple">
+      <Link href="simple">
             <a>
             <div className="card">
               <h3>Simple Substitution</h3>
@@ -12,7 +12,7 @@ export const Index = (): JSX.Element => (
             </div>
             </a>
       </Link>
-      <Link href="/substitution/homophonic">
+      <Link href="homophonic">
             <a>
             <div className="card">
               <h3>Homophonic Substitution</h3>
@@ -20,7 +20,7 @@ export const Index = (): JSX.Element => (
             </div>
             </a>
       </Link>
-      <Link href="/vigenere">
+      <Link href="vigenere">
             <a>
             <div className="card">
               <h3>Vigenère Cipher</h3>
