@@ -60,7 +60,7 @@ export const Index = (): JSX.Element => (
               margin: 0;
             }
             a {
-              width: 33%;
+              width: 33vw;
               font-size: 1em;
               margin: 0.5em;
               text-decoration: none;

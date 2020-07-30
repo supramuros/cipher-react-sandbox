@@ -26,6 +26,8 @@ export const Layout: FunctionComponent<Props> = (props) => {
                 <link rel="icon" href="/eye-off.svg" />
             </Head>
             <header>
+                <label htmlFor="hamburger">&#9776;</label>
+                <input type="checkbox" id="hamburger"/>
                 <Link href="index"><a><h1>Cypher</h1></a></Link>
                 <HeaderNav links={headerLinks} />
             </header>
@@ -108,8 +110,6 @@ export const Layout: FunctionComponent<Props> = (props) => {
             footer {
                 width: 100%;
                 flex: 0 0 auto;
-                flex-grow: 0;
-                border-top: 1px solid #eaeaea;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -119,16 +119,6 @@ export const Layout: FunctionComponent<Props> = (props) => {
                 padding: 0 1em;
                 background-color: gray;
             }
-
-            footer img {
-                margin-left: 0.5rem;
-            }
-
-            footer a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
             `}</style>
 
             <style jsx global>{`
@@ -137,6 +127,7 @@ export const Layout: FunctionComponent<Props> = (props) => {
                 padding: 0;
                 margin: 0;
                 height: 100%;
+                width: 100%;
                 font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
                 Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
@@ -158,6 +149,39 @@ export const Layout: FunctionComponent<Props> = (props) => {
                 background-color: white;
                 font-size: 1em;
             }
+            .header-nav {
+                display:flex;
+                flex-direction: row;
+            }
+            label[for=hamburger], #hamburger { 
+                display: none;
+                    color: white;
+                    font-size: 1.5em;
+                    padding: 10px; 
+            }
+            @media only screen and (max-width: 800px) {
+                header{
+                    flex-direction:row;
+                }
+                .header-nav-a {
+                  display:none;
+                }
+                label[for=hamburger]{ 
+                    display: inline;
+                    color: white;
+                    font-size: 1.5em;
+                    padding: 10px;
+                 
+                }
+                input#hamburger:checked ~ .header-nav {
+                    display:flex;
+                    flex-direction: column;
+                }
+                input#hamburger:checked ~ .header-nav > .header-nav-a {
+                    display:inline-flex;
+                  }
+                
+              }
             .footer-nav-a {
                 color: white;
                 background-color:gray;
@@ -180,7 +204,8 @@ export const Layout: FunctionComponent<Props> = (props) => {
             #__next,
             #__next > div,
             #__next > div > div {
-                height: 100%;
+                height: 100vh;
+                width: 100vw;
             }
             `}</style>
         </div>

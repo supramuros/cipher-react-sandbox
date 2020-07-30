@@ -119,6 +119,11 @@ export default class Vigenere extends React.Component<{},State> {
             p {
                 text-align: left;
             }
+            @media only screen and (max-width: 800px) {
+                .flex-container-row {
+                    flex-direction:column;
+                }
+            }
             `}</style>
             </Layout>
         );

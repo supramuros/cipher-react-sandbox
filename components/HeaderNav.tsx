@@ -17,9 +17,13 @@ export const HeaderNav: FunctionComponent<Props> = (props) => {
     }
    } 
     return (
-        <Fragment>
+        <div className="header-nav">
             {linkDisplay}
             <style jsx>{`
+            .header-nav {
+                display:flex;
+                flex-direction: row;
+            }
             .header-nav-a {
                 color: white;
                 background-color:gray;
@@ -39,6 +43,6 @@ export const HeaderNav: FunctionComponent<Props> = (props) => {
                 margin:0;
             }
             `}</style>
-        </Fragment>
+        </div>
     )
 }
